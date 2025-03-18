@@ -22,6 +22,23 @@ To install the dependencies for this script, run:
 pip install google-genai opencv-python pyaudio pillow mss
 ```
 
+If You are Using Linux and not able to install dependencies because of gcc error, use this:
+
+``` 
+pip install google-genai opencv-python pillow mss
+
+sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+sudo apt-get install ffmpeg libav-tools
+
+sudo pip install pyaudio
+``` 
+
+Some Extra Dependencies might needed to be install:
+``` 
+pip install taskgroup
+pip install exceptiongroup
+``` 
+
 Before running this script, ensure the `GOOGLE_API_KEY` environment
 variable is set to the api-key you obtained from Google AI Studio.
 
